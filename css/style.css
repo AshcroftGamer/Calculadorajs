@@ -1,0 +1,153 @@
+@media only screen and (min-width: 200px) {
+    /* For desktop: */
+    .col-1 {
+        width: 8.33%;
+    }
+    .col-2 {
+        width: 16.66%;
+    }
+    .col-3 {
+        width: 25%;
+    }
+    .col-4 {
+        width: 33.33%;
+    }
+    .col-5 {
+        width: 41.66%;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-7 {
+        width: 58.33%;
+    }
+    .col-8 {
+        width: 66.66%;
+    }
+    .col-9 {
+        width: 75%;
+    }
+    .col-10 {
+        width: 83.33%;
+    }
+    .col-11 {
+        width: 91.66%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+    .row-1 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    /*Inicia o código aqui*/
+    .principal {
+        margin: auto;
+        padding: auto;
+        background: #ffffff;
+        background-image: url('../img/bascara.png');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 70% 55%;
+        height: 640px;
+    }
+    h1.titulo {
+        margin-left: 176px;
+        margin-top: -2px;
+        font-size: 63px;
+        font-style: normal;
+        font-family: 'bebasneue';
+        color: black;
+        font-weight: 1;
+    }
+    div.head img {
+        background-position: left bottom;
+    }
+    div.bloco {
+        border: 1px 1px #474545;
+    }
+    div.bloco h2 {
+        margin-top: -24px;
+        margin-bottom: 22px;
+        font-size: 49px;
+        margin-left: 44px;
+        font-family: 'bebasneue';
+        font-weight: 1;
+    }
+    div.itens {
+        display: inline-flex;
+    }
+    div.bloco input {
+        font-family: 'bebasneue';
+        height: 62px;
+        width: 76px;
+        border-radius: 13px;
+        margin-left: 15px;
+        margin-top: -25px;
+        border: none;
+        background: #F9EBEB 61%;
+    }
+    button#mybtn {
+        border-radius: 8px;
+        border: none;
+        height: 49px;
+        width: 312px;
+        color: black;
+        font-size: 34px;
+        font-family: 'bebasneue';
+        background-color: #7FE0BD;
+        margin-left: 15px;
+        margin-top: 17px;
+    }
+    button.calc:hover {
+        color: #f6f6f6;
+        background-color: #0d7437;
+    }
+    div.formula img {
+        margin-top: 228px;
+        margin-left: -1px;
+        height: 164px;
+        width: 167px;
+    }
+    .bg-modal {
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.75);
+        position: fixed;
+        z-index: 2;
+        top: -100%;
+        display: block;
+        transition: 350ms;
+    }
+    .modal {
+        width: 80%;
+        height: 80%;
+        border-radius: 8px;
+        background-color: white;
+        margin: 50px auto 50px auto;
+        transition: 350ms;
+    }
+    .modal span {
+        font-size: 25px;
+        font-family: 'bebasneue';
+        margin-left: 15px;
+    }
+    .modal .valor {
+        font-size: 25px;
+        font-family: 'bebasneue';
+    }
+    spam#close {
+        float: right;
+        font-size: 50px;
+        margin-top: -2px;
+        margin-right: 13px;
+        align-items: center;
+    }
+    @font-face {
+        font-family: 'bebasneue';
+        src: url('../font/bebasneue-regular-webfont.woff2') format('woff2'), url('../font/bebasneue-regular-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+}
