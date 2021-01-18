@@ -40,6 +40,10 @@ function abrirModal() {
 
 function fecharModal() {
     document.getElementById('modal').style.display = "none";
+
+    document.getElementById('a').value = '';
+    document.getElementById('b').value = '';
+    document.getElementById('c').value = '';
 }
 
 
