@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/style.css" />
-    <script type="text/javascript" src="js/script.js"></script>
+    <script src="./js/main.js"></script>
 
 </head>
 
@@ -20,73 +20,35 @@
                 <h1 class="titulo">OZIBHAS</h1>
             </div>
         </div>
-        <script>
-            function equacao() {
-
-
-                if (delta(a, b, c) > 0) {
-                    console.log("X1 é igual: " + x1(a, b, delta(a, b, c)));
-                    console.log("X2 é igual: " + x2(a, b, delta(a, b, c)));
-
-                    console.log(delta(a, b, c));
-                    document.getElementById("respostaX1").innerHTML = "X1 é igual: " + x1(a, b, delta(a, b, c))
-                    document.getElementById("respostaX2").innerHTML = "X2 é igual: " + x2(a, b, delta(a, b, c)) //até aqui
-                } else {
-                    console.log("O Valor de Delta é Negativo " + delta(a, b, c))
-                }
-            }
-
-            function delta(a, b, c) {
-                return Math.pow(b, 2) - (4 * a * c);
-            }
-
-            function x1(a, b, valorDelta) {
-                return (-b + Math.sqrt(valorDelta)) / (2 * a);
-
-            }
-
-            function x2(a, b, valorDelta) {
-                return (-b - Math.sqrt(valorDelta)) / (2 * a);
-
-            }
-            function abrirModal() {
-                document.getElementById('modal').style.top = "0px";
-                equacao(document.getElementById('valorA').value, document.getElementById('valorB').value, document.getElementById('valorC').value)
-
-
-            }
-
-            function fecharModal() {
-                document.getElementById('modal').style.top = "-100%";
-            }
-
-
-        </script>
 
         <div class="row-1">
             <div class="col-12 itens">
                 <div class="col-4 bloco">
                     <h2>A</h2>
-                    <input id="valorA" type="text">
+                    <input id="a" type="text">
                 </div>
                 <div class="col-4 bloco">
 
                     <h2>B</h2>
 
-                    <input id="valorB" type="text">
+                    <input id="b" type="text">
                 </div>
                 <div class="col-4 bloco">
                     <h2>C</h2>
 
-                    <input id="valorC" type="text">
+                    <input id="c" type="text">
                 </div>
             </div>
-            <div class="bg-modal" id="modal">
+        </div>
+        <div class="row-1">
+            <div class="col-12" id="modal">
+
                 <div class="modal">
-                    <spam id="close" onclick="fecharModal()">&times;</spam>
-                    <span class="valor">O Valor de X1 é:</span><br>
-                    <span class="valor">o Valor de X2 é:</span>
+                    <span id="close" onclick="fecharModal()"><img src="img/tim.png" alt=""></span>
+                    <span class="valor" id="x1">X1 é igual:</span><br>
+                    <span class="valor" id="x2">X2 é igual:</span>
                 </div>
+
             </div>
         </div>
 

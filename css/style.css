@@ -110,39 +110,41 @@
         height: 164px;
         width: 167px;
     }
-    .bg-modal {
+    #modal {
         height: 100%;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.75);
+        top: 68px;
         position: fixed;
         z-index: 2;
-        top: -100%;
-        display: block;
+        display: none;
         transition: 350ms;
     }
     .modal {
-        width: 80%;
-        height: 80%;
-        border-radius: 8px;
-        background-color: white;
+        height: 2px;
+        margin-top: 67px;
+        width: 329px;
+        height: 469px;
+        background: rgba(196, 196, 196, 0.79);
         margin: 50px auto 50px auto;
         transition: 350ms;
     }
-    .modal span {
+    span {
         font-size: 25px;
         font-family: 'bebasneue';
         margin-left: 15px;
     }
-    .modal .valor {
-        font-size: 25px;
+    span img {
+        margin-top: 19px;
+        width: 59px;
+    }
+    .valor {
+        font-size: 31px;
         font-family: 'bebasneue';
     }
-    spam#close {
+    span#close {
         float: right;
-        font-size: 50px;
         margin-top: -2px;
         margin-right: 13px;
-        align-items: center;
     }
     @font-face {
         font-family: 'bebasneue';
